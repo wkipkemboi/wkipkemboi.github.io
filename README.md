@@ -21,7 +21,7 @@ Welcome to my portfolio! I am a **GIS and Earth Observation (EO) Consultant** wi
 
 ## 🧑‍💼 Experience
 
-### Head of Department, Information & Knowledge Management (DIKM)
+### HOD, Department of Information & Knowledge Management (DIKM) | Senior GIS/RS Analyst
 **Centre for Training and Integrated Research in ASAL Development (CETRAD)**  
 *2024 – Present*  
 Leading geospatial research and applications in ASAL regions, focusing on sustainable transformation, restoration assessment, natural resource management, and GIS-based capacity strengthening.
@@ -48,7 +48,7 @@ Taught and coordinated courses in photogrammetry, engineering survey, survey con
    [Read the publication](https://doi.org/10.1007/s41651-023-00143-3)
 
 2. **Low-Cost Sensors and Multitemporal Remote Sensing for Operational Turbidity Monitoring in an East African Wetland Environment**  
-   *Environmental Science and Pollution Research*, Under review
+   *Environmental Science and Pollution Research* [Read the publication](https://doi.org/10.1109/JSTARS.2024.3381756) 
 
 3. **Using the SARIMA Model to Predict the Trends of Evapotranspiration and Runoff in the Muringato River Basin, Kenya**  
    *Stochastic Environmental Research and Risk Assessment*, 2023  
@@ -62,17 +62,6 @@ Taught and coordinated courses in photogrammetry, engineering survey, survey con
 - **Muringato Catchment Web-GIS Platform**: Developed a web-based GIS platform for environmental monitoring and conservation in the Muringato Catchment, integrating community reporting and spatial analysis tools.
 
 - **Turbidity Monitoring in Wetlands**: Implemented low-cost sensors and remote sensing techniques for real-time turbidity monitoring in East African wetlands.
-
-## 📈 Skills Overview
-
-- **GIS**: 95%
-- **Earth Observation**: 85%
-- **Spatial Data Analysis**: 90%
-- **Data Science & Machine Learning**: 86%
-- **GIS Modelling**: 88%
-- **Research & Writing**: 93%
-- **Data Collection Tools (Customization)**: 82%
-- **Enterprise GIS & Geoportal Integration**: 80%
 
 ## 📬 Contact Me
 
