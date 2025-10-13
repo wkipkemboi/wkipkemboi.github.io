@@ -78,16 +78,7 @@ Taught and coordinated courses in photogrammetry, engineering survey, survey con
 
 Feel free to reach out for collaborations, consultations, or inquiries:
 
-- **Email**: [wisdom.kipkemboi@example.com](mailto:wisdom.kipkemboi@example.com)
+- **Email**: [wisdom.kipkemboi@example.com](mailto:kipwizzdom@gmail.com)
 - **LinkedIn**: [linkedin.com/in/wisdom-kipkemboi](https://www.linkedin.com/in/wisdom-kipkemboi)
 - **ResearchGate**: [researchgate.net/profile/Wisdom-Kipkemboi](https://www.researchgate.net/profile/Wisdom-Kipkemboi)
-
----
-
-*Note: Replace placeholder email with your actual contact email.*
-
----
-
-This README.md is designed to provide a comprehensive overview of your professional background, skills, and contributions in the field of GIS and Earth Observation. Feel free to customize it further to align with your personal branding and specific achievements.
-::contentReference[oaicite:0]{index=0}
  
