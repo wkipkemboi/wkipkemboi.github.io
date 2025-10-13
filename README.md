@@ -78,7 +78,7 @@ Taught and coordinated courses in photogrammetry, engineering survey, survey con
 
 Feel free to reach out for collaborations, consultations, or inquiries:
 
-- **Email**: [wisdom.kipkemboi@example.com](mailto:kipwizzdom@gmail.com)
-- **LinkedIn**: [linkedin.com/in/wisdom-kipkemboi](https://www.linkedin.com/in/wisdom-kipkemboi)
-- **ResearchGate**: [researchgate.net/profile/Wisdom-Kipkemboi](https://www.researchgate.net/profile/Wisdom-Kipkemboi)
+- **Email**: [kipwizzdom@gmail.com](mailto:kipwizzdom@gmail.com)
+- **LinkedIn**: [linkedin.com/in/wisdom-kipkemboi]([https://www.linkedin.com/in/wisdom-kipkemboi](https://www.linkedin.com/in/wisdom-kipkemboi-msc-ba8281103/))
+- **ResearchGate**: [researchgate.net/profile/Wisdom-Kipkemboi]([https://www.researchgate.net/profile/Wisdom-Kipkemboi](https://www.researchgate.net/profile/Wisdom-Kipkemboi-2))
  
