@@ -1,5 +1,5 @@
 # Wisdom Kipkemboi
-`GIS & Earth Observation Consultant` · `CETRAD, Nanyuki` · `Kenya`
+`GIS & Earth Observation Consultant`
 
 Senior GIS & EO professional applying **satellite analysis, enterprise systems, and spatial software development** to real-world problems — across natural resource management, environmental policy, carbon projects, institutional GIS, and field-based research. **10+ years. East Africa and beyond.**
 
