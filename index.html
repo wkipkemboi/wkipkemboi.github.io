@@ -1,737 +1,1534 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>Wisdom Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wisdom Kipkemboi — GIS & Earth Observation Professional</title>
+<meta name="description" content="Portfolio of Wisdom Kipkemboi — GIS & Earth Observation professional with 10+ years transforming geospatial data into decisions that matter. Based in Nairobi, Kenya." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+:root{
+  --off-white:#faf8f4;
+  --warm-white:#f4eee5;
+  --stone:#e7ddd0;
+  --taupe:#b9ac9b;
+  --brown:#6f665c;
+  --charcoal:#27231f;
+  --ink:#181512;
+  --accent:#2f6a52;
+  --accent-light:#e7efe9;
+  --accent-mid:#6f9f87;
+  --gold:#ae7c36;
+  --gold-light:#f6edde;
+  --shadow:0 18px 45px rgba(54,42,25,0.08);
+  --border:rgba(0,0,0,0.09);
+  --text-muted:#6f665c;
+}
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+html{scroll-behavior:smooth}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:
+    radial-gradient(circle at top right,rgba(47,106,82,0.06),transparent 22%),
+    radial-gradient(circle at left top,rgba(174,124,54,0.07),transparent 26%),
+    var(--off-white);
+  color:var(--charcoal);
+  font-size:16px;
+  line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+/* â”€â”€â”€ NAV â”€â”€â”€ */
+nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(250,248,244,0.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--stone);
+  padding:0 5vw;
+}
+.nav-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  height:68px;
+}
+.nav-logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;color:var(--ink);
+  display:flex;align-items:center;gap:0.7rem;
+  letter-spacing:0.01em;
+}
+.nav-dot{
+  width:9px;height:9px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
+}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{
+  font-size:0.78rem;font-weight:500;color:var(--brown);
+  letter-spacing:0.1em;text-transform:uppercase;
+  transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{
+  background:var(--accent);color:#fff!important;
+  padding:8px 20px;border-radius:4px;
+  font-size:0.76rem!important;font-weight:600!important;
+  letter-spacing:0.08em!important;
+  transition:background 0.2s!important;
+}
+.nav-cta:hover{background:#264f3e!important}
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+/* â”€â”€â”€ HERO â”€â”€â”€ */
+.hero{
+  padding:0 5vw;
+  position:relative;overflow:hidden;
+}
+.hero-blob1{
+  position:absolute;right:-80px;top:-100px;
+  width:560px;height:560px;border-radius:50%;
+  background:var(--accent-light);opacity:0.5;pointer-events:none;
+}
+.hero-blob2{
+  position:absolute;right:80px;bottom:-60px;
+  width:260px;height:260px;border-radius:50%;
+  background:var(--gold-light);opacity:0.75;pointer-events:none;
+}
+.hero-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 420px;
+  gap:4.5rem;align-items:center;
+  padding:4rem 0 6rem;
+  position:relative;z-index:1;
+}
+.hero-copy{position:relative;z-index:2}
+.hero-orbit{
+  position:absolute;
+  left:60%;
+  top:57%;
+  transform:translate(-50%,-50%);
+  width:520px;height:300px;
+  pointer-events:none;
+  z-index:0;
+  opacity:0.92;
+}
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+/* -------- ORBIT ------------------- */
+.eyebrow{
+  display:flex;align-items:center;gap:0.75rem;
+  margin-bottom:1.5rem;
+}
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+.eyebrow-bar{width:36px;height:1.5px;background:var(--accent)}
+.eyebrow-txt{
+  font-size:0.72rem;font-weight:600;
+  letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--accent);
+}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(3rem,5.2vw,4.8rem);
+  line-height:1.08;color:var(--ink);
+  margin-bottom:1.5rem;font-weight:700;
+}
+.hero h1 em{color:var(--accent);font-style:italic;font-weight:500}
+.hero-lead{
+  font-size:1.02rem;line-height:1.84;
+  color:var(--brown);max-width:550px;
+  margin-bottom:2.5rem;
+}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{
+  display:inline-block;background:var(--accent);color:#fff;
+  padding:0.9rem 2rem;font-size:0.82rem;font-weight:600;
+  letter-spacing:0.07em;text-transform:uppercase;
+  border-radius:4px;transition:background 0.2s,transform 0.15s;
+}
+.btn-primary:hover{background:#264f3e;transform:translateY(-2px)}
+.btn-outline{
+  display:inline-block;background:transparent;color:var(--charcoal);
+  padding:0.9rem 2rem;font-size:0.82rem;font-weight:600;
+  letter-spacing:0.07em;text-transform:uppercase;
+  border:1.5px solid var(--stone);border-radius:4px;
+  transition:border-color 0.2s,color 0.2s,transform 0.15s;
+}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+/* Hero card */
+.hero-card{
+  background:rgba(255,255,255,0.55);
+  border-radius:20px;padding:2.25rem;
+  border:1px solid rgba(231,221,208,0.7);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(6px);
+  position:relative;
+  z-index:2;
+  overflow:hidden;
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+}
+.hero-card:hover{transform:translateY(-4px);box-shadow:0 28px 68px rgba(54,42,25,0.12);border-color:rgba(47,106,82,0.18)}
+.hero-card::before,
+.about-card::before,
+.edu-card::before,
+.pcard::before,
+.qcard::before,
+.avail::before{
+  content:'';
+  position:absolute;inset:0 auto auto 0;
+  width:100%;height:3px;
+  background:linear-gradient(90deg,var(--accent),rgba(174,124,54,0.55));
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform 0.32s ease;
+}
+.hero-card:hover::before,
+.about-card:hover::before,
+.edu-card:hover::before,
+.pcard:hover::before,
+.qcard:hover::before,
+.avail:hover::before{transform:scaleX(1)}
+.hero-card-head{
+  font-family:'Playfair Display',serif;
+  font-style:italic;font-size:0.92rem;
+  color:var(--brown);
+  padding-bottom:1.25rem;border-bottom:1px solid var(--stone);
+  margin-bottom:1.5rem;
+}
+.stats{display:flex}
+.stat{flex:1;text-align:center;padding:0.6rem 0}
+.stat+.stat{border-left:1px solid var(--stone)}
+.stat-n{
+  font-family:'Playfair Display',serif;
+  font-size:2.2rem;font-weight:700;
+  color:var(--ink);display:block;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.stat-n span{color:var(--accent)}
+.stat-l{
+  font-size:0.66rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:0.12em;
+  color:var(--taupe);margin-top:0.4rem;display:block;
+}
+.bars{
+  margin-top:1.6rem;padding-top:1.6rem;
+  border-top:1px solid var(--stone);
+  display:flex;flex-direction:column;gap:1rem;
+}
+.bar-top{display:flex;justify-content:space-between;margin-bottom:0.4rem}
+.bar-name{font-size:0.8rem;font-weight:500;color:var(--charcoal)}
+.bar-val{font-size:0.72rem;font-weight:600;color:var(--accent)}
+.bar-track{height:6px;background:rgba(111,102,92,0.18);border-radius:999px;overflow:hidden}
+.bar-fill{
+  height:100%;width:0;
+  background:linear-gradient(90deg,var(--accent),var(--accent-mid));
+  border-radius:999px;
+  transition:width 1.4s cubic-bezier(.2,.8,.2,1);
+}
+
+/* â”€â”€â”€ DIVIDER â”€â”€â”€ */
+.divider{width:100%;height:1px;background:var(--stone)}
+
+/* â”€â”€â”€ SECTIONS â”€â”€â”€ */
+.section{padding:6rem 5vw}
+.section-alt{background:var(--warm-white)}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-head{margin-bottom:3rem}
+.sec-eye{
+  font-size:0.7rem;font-weight:600;
+  letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:0.6rem;
+}
+h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,3.1vw,2.8rem);
+  color:var(--ink);line-height:1.14;
+}
+h2 em{color:var(--accent);font-style:italic}
+
+/* â”€â”€â”€ ABOUT â”€â”€â”€ */
+.about-grid{
+  display:grid;grid-template-columns:1.1fr 1fr;
+  gap:4.5rem;align-items:start;
+}
+.about-text p{
+  color:var(--text-muted);margin-bottom:1.2rem;
+  font-size:0.99rem;line-height:1.82;
+}
+.about-badge-wrap{display:flex;flex-direction:column;gap:1.25rem}
+.about-card{
+  background:rgba(255,255,255,0.8);
+  border:1px solid var(--stone);border-radius:16px;
+  padding:1.75rem;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+}
+.about-card:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(54,42,25,0.12);border-color:rgba(47,106,82,0.16)}
+.about-card-label{
+  font-size:0.7rem;text-transform:uppercase;
+  letter-spacing:0.12em;color:var(--accent);
+  font-weight:600;margin-bottom:0.5rem;
+}
+.about-card-value{
+  font-size:1rem;font-weight:600;color:var(--ink);
+  margin-bottom:0.25rem;
+}
+.about-card-sub{font-size:0.85rem;color:var(--brown)}
+.spec-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.spec-chip{
+  background:var(--accent-light);color:var(--accent);
+  padding:5px 12px;border-radius:5px;
+  font-size:0.76rem;font-weight:500;
+}
+
+/* â”€â”€â”€ SERVICES â”€â”€â”€ */
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem;
+}
+.xcard{
+  background:rgba(255,255,255,0.78);
+  border-radius:14px;padding:1.9rem;
+  border:1px solid var(--stone);
+  transition:transform 0.2s,box-shadow 0.2s;
+  position:relative;overflow:hidden;box-shadow:var(--shadow);
+}
+.xcard:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(54,42,25,0.13)}
+.xcard::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--accent);transform:scaleX(0);transform-origin:left;
+  transition:transform 0.3s;
+}
+.xcard:hover::after{transform:scaleX(1)}
+.xcard-num{
+  font-size:0.64rem;font-weight:600;letter-spacing:0.15em;
+  color:var(--taupe);text-transform:uppercase;margin-bottom:1.1rem;
+}
+.xcard-ico{
+  width:44px;height:44px;background:var(--accent-light);
+  border-radius:10px;display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;
+}
+.xcard-head{
+  display:flex;align-items:center;gap:0.9rem;
+  margin-bottom:0.8rem;
+}
+.xcard-ico svg{
+  width:20px;height:20px;stroke:var(--accent);fill:none;
+  stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+}
+.xcard-title{
+  font-size:1rem;font-weight:600;
+  color:var(--ink);margin-bottom:0;
+}
+.xcard-desc{font-size:0.88rem;color:var(--brown);line-height:1.78}
+
+/* â”€â”€â”€ TECH STACK â”€â”€â”€ */
+.tech-wrap{display:grid;grid-template-columns:240px 1fr;gap:3.5rem;align-items:start}
+.tech-tabs{display:flex;flex-direction:column}
+.ttab{
+  padding:0.95rem 1.2rem;font-size:0.84rem;font-weight:500;
+  color:var(--brown);cursor:pointer;
+  border-left:2px solid var(--stone);transition:all 0.2s;
+}
+.ttab.on,.ttab:hover{color:var(--accent);border-left-color:var(--accent);background:var(--accent-light)}
+.tpanel{display:none;flex-direction:column;gap:1.25rem}
+.tpanel.on{display:flex}
+.tpanel-label{
+  font-size:0.68rem;font-weight:600;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--taupe);
+}
+.tags{display:flex;flex-wrap:wrap;gap:0.6rem}
+.tag{
+  display:inline-flex;align-items:center;gap:0.45rem;
+  padding:0.5rem 0.95rem;border-radius:6px;
+  font-size:0.8rem;font-weight:500;
+  background:#fff;border:1px solid var(--stone);
+  transition:border-color 0.2s,color 0.2s;
+}
+.tag:hover{border-color:var(--accent);color:var(--accent)}
+.tag.hi{background:var(--accent-light);border-color:transparent;color:var(--accent)}
+.tdot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
+}
+
+/* â”€â”€â”€ EXPERIENCE TIMELINE â”€â”€â”€ */
+.timeline-wrap{
+  display:flex;flex-direction:column;gap:0;
+  position:relative;
+}
+.timeline-wrap::before{
+  content:'';
+  position:absolute;
+  left:194px;top:0;bottom:0;
+  width:1px;background:linear-gradient(180deg,rgba(47,106,82,0.24),rgba(47,106,82,0.06));
+}
+.te{
+  display:grid;grid-template-columns:200px 1fr;
+  gap:2rem;padding:2.5rem 0;
+  border-bottom:1px solid var(--stone);
+  position:relative;
+}
+.te:last-child{border-bottom:none}
+.te::before{
+  content:'';
+  position:absolute;
+  left:187px;top:2.9rem;
+  width:13px;height:13px;border-radius:50%;
+  background:var(--off-white);
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 7px rgba(47,106,82,0.06);
+}
+.te > div:first-child{padding-right:2.2rem}
+.te-yr{
+  font-size:0.78rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--accent);line-height:1;
+  margin-bottom:0.35rem;
+}
+.te-org{font-size:0.85rem;color:var(--taupe);font-weight:500}
+.te-role{
+  font-size:1.05rem;font-weight:600;
+  color:var(--ink);margin-bottom:0.6rem;
+}
+.te-desc{font-size:0.9rem;color:var(--brown);line-height:1.75;margin-bottom:0.9rem}
+.te-chips{display:flex;flex-wrap:wrap;gap:0.5rem}
+.chip{
+  font-size:0.74rem;font-weight:500;
+  background:var(--accent-light);color:var(--accent);
+  padding:4px 10px;border-radius:4px;
+}
+
+/* â”€â”€â”€ EDUCATION â”€â”€â”€ */
+.edu-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:1.35rem;
+}
+.edu-card{
+  background:rgba(255,255,255,0.8);
+  border:1px solid var(--stone);border-radius:14px;
+  padding:1.75rem;box-shadow:var(--shadow);
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+  position:relative;overflow:hidden;
+}
+.edu-card:hover{transform:translateY(-4px);box-shadow:0 22px 54px rgba(54,42,25,0.11);border-color:rgba(47,106,82,0.16)}
+.edu-degree{
+  font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--accent);font-weight:600;margin-bottom:0.5rem;
+}
+.edu-title{font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:0.35rem}
+.edu-institution{font-size:0.84rem;color:var(--taupe)}
+.section-cluster{
+  display:flex;justify-content:space-between;align-items:end;
+  gap:1rem;margin-bottom:1.25rem;
+  flex-wrap:wrap;
+}
+.toggle-btn{
+  appearance:none;border:1px solid var(--stone);
+  background:#fff;color:var(--charcoal);
+  border-radius:999px;padding:0.7rem 1rem;
+  font:600 0.74rem 'DM Sans',sans-serif;
+  text-transform:uppercase;letter-spacing:0.08em;
+  cursor:pointer;transition:border-color 0.2s,color 0.2s,transform 0.15s;
+}
+.toggle-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.is-collapsed .is-extra{display:none}
+.edu-grid.is-collapsed{max-height:255px;overflow:hidden}
+.meta-count{
+  display:inline-flex;align-items:center;gap:0.45rem;
+  padding:0.38rem 0.75rem;border-radius:999px;
+  background:var(--accent-light);color:var(--accent);
+  font-size:0.74rem;font-weight:600;letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+
+/* â”€â”€â”€ PUBLICATIONS â”€â”€â”€ */
+.pub-toolbar{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;flex-wrap:wrap;margin-bottom:1.4rem;
+}
+.pub-filters{display:flex;gap:0.65rem;flex-wrap:wrap}
+.pub-filter{
+  appearance:none;border:1px solid var(--stone);
+  background:rgba(255,255,255,0.82);color:var(--brown);
+  border-radius:999px;padding:0.6rem 0.95rem;
+  font:600 0.74rem 'DM Sans',sans-serif;
+  letter-spacing:0.08em;text-transform:uppercase;
+  cursor:pointer;transition:all 0.2s;
+}
+.pub-filter.active,.pub-filter:hover{
+  background:var(--accent-light);border-color:transparent;color:var(--accent);
+}
+.pub-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
+  gap:1.35rem;
+}
+.pcard{
+  background:rgba(255,255,255,0.8);
+  border-radius:14px;padding:1.9rem;
+  border:1px solid var(--stone);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:0.75rem;
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+  position:relative;overflow:hidden;
+}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 22px 54px rgba(54,42,25,0.11);border-color:rgba(47,106,82,0.16)}
+.py-badge{
+  display:inline-block;background:#fef3e2;
+  color:#b45309;font-size:0.68rem;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:4px 10px;border-radius:4px;align-self:flex-start;
+  border:1px solid rgba(180,83,9,0.15);
+}
+.py-badge.conf{
+  background:#e0f2fe;color:#0369a1;
+  border:1px solid rgba(3,105,161,0.18);
+}
+.py-badge.book-thesis{
+  background:#f0fdf4;color:#166534;
+  border:1px solid rgba(22,101,52,0.18);
+}
+.py-badge.under-review{
+  background:#fdf4ff;color:#7e22ce;
+  border:1px solid rgba(126,34,206,0.18);
+}
+.ptitle{font-size:0.93rem;font-weight:600;color:var(--ink);line-height:1.5}
+.pjournal{font-size:0.82rem;color:var(--brown);margin-bottom:0.25rem}
+.prole{
+  font-size:0.72rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.08em;color:var(--accent);
+}
+.pcard.is-hidden{display:none}
+.wcard.is-hidden{display:none}
+.plink{
+  font-size:0.78rem;font-weight:600;color:var(--accent);
+  text-decoration:none;align-self:flex-start;
+  border-bottom:1px solid transparent;
+  transition:border-color 0.2s;
+}
+.plink:hover{border-bottom-color:var(--accent)}
+
+/* â”€â”€â”€ PORTFOLIO / PROJECTS â”€â”€â”€ */
+.portfolio-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:1.35rem;
+}
+.wcard{
+  background:rgba(255,255,255,0.82);
+  border-radius:18px;padding:0;
+  border:1px solid var(--stone);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:0.75rem;
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+  position:relative;overflow:hidden;
+}
+.wcard:hover{transform:translateY(-5px);box-shadow:0 26px 62px rgba(54,42,25,0.12);border-color:rgba(47,106,82,0.18)}
+.wcard::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-mid));
+  transform:scaleX(0);transform-origin:left;transition:transform 0.3s;
+}
+.wcard:hover::before{transform:scaleX(1)}
+.wmedia{
+  min-height:220px;position:relative;overflow:hidden;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+.wmedia::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 20% 22%,rgba(255,255,255,0.28),transparent 16%),
+    linear-gradient(135deg,rgba(255,255,255,0.2),transparent 40%),
+    linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.18));
+}
+.wmedia::after{
+  content:'';position:absolute;inset:auto 18px 18px 18px;height:44px;
+  border-radius:12px;background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,0.18);
+}
+.wmedia.map-crowd{
+  background:
+    radial-gradient(circle at 28% 30%,rgba(255,255,255,0.25),transparent 13%),
+    radial-gradient(circle at 42% 48%,rgba(236,247,236,0.85),transparent 18%),
+    linear-gradient(135deg,#57a06a 0%,#1f6240 58%,#2c7861 100%);
+}
+.wmedia.map-geoportal{
+  background:
+    radial-gradient(circle at 74% 44%,rgba(252,220,112,0.6),transparent 5%),
+    radial-gradient(circle at 58% 54%,rgba(246,217,104,0.58),transparent 5%),
+    linear-gradient(180deg,#eef5ef 0 22%,#94be84 22% 100%),
+    linear-gradient(90deg,#b6d6a7,#86b57c);
+}
+.wmedia.map-enterprise{
+  background:
+    radial-gradient(circle at 62% 38%,rgba(130,220,214,0.26),transparent 18%),
+    linear-gradient(135deg,#2f2664,#47136f 46%,#0d5b63 100%);
+}
+.wmedia.map-elearn{
+  background:
+    radial-gradient(circle at 28% 26%,rgba(72,130,220,0.18),transparent 12%),
+    linear-gradient(180deg,#f4f7fb 0%,#ffffff 62%),
+    linear-gradient(135deg,#dee8f5,#ffffff);
+}
+.wcard-body{
+  padding:1.5rem 1.6rem 1.7rem;
+  display:flex;flex-direction:column;gap:0.8rem;flex:1;
+}
+.wcat{
+  display:inline-block;background:var(--accent-light);color:var(--accent);
+  font-size:0.7rem;font-weight:600;letter-spacing:0.1em;
+  text-transform:uppercase;padding:4px 10px;border-radius:4px;
+  align-self:flex-start;
+}
+.wtitle{font-size:1.05rem;font-weight:600;color:var(--ink)}
+.wdesc{font-size:0.88rem;color:var(--brown);line-height:1.75;flex:1}
+
+/* â”€â”€â”€ TESTIMONIALS â”€â”€â”€ */
+.quote-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+  gap:1.5rem;
+}
+.qcard{
+  background:rgba(255,255,255,0.8);
+  border:1px solid var(--stone);border-radius:16px;
+  padding:2.25rem;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+}
+.qcard:hover{transform:translateY(-4px);box-shadow:0 22px 54px rgba(54,42,25,0.11);border-color:rgba(47,106,82,0.16)}
+.qmark{
+  font-family:'Playfair Display',serif;
+  font-size:4rem;color:var(--accent-light);
+  line-height:1;position:absolute;top:1.2rem;left:1.75rem;
+}
+.qtext{
+  font-size:0.93rem;line-height:1.84;
+  color:var(--charcoal);margin-bottom:1.5rem;
+  padding-top:1.5rem;
+  font-style:italic;
+}
+.qauthor{display:flex;align-items:center;gap:1rem}
+.qavatar{
+  width:42px;height:42px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.82rem;font-weight:600;flex-shrink:0;
+}
+.qname{font-size:0.92rem;font-weight:600;color:var(--ink)}
+.qrole{font-size:0.78rem;color:var(--taupe);margin-top:2px}
+
+/* â”€â”€â”€ CONTACT â”€â”€â”€ */
+.contact-grid{
+  display:grid;grid-template-columns:1.05fr 0.95fr;
+  gap:4rem;align-items:start;
+}
+.cintro{
+  font-size:0.98rem;line-height:1.84;
+  color:var(--brown);margin-bottom:2rem;
+}
+.citem{
+  display:flex;align-items:flex-start;gap:1rem;
+  margin-bottom:1.25rem;
+}
+.cico{
+  width:38px;height:38px;border-radius:8px;
+  background:var(--accent-light);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.cico svg{
+  width:17px;height:17px;stroke:var(--accent);fill:none;
+  stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+}
+.clabel{
+  font-size:0.7rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.1em;color:var(--taupe);display:block;margin-bottom:2px;
+}
+.cval{font-size:0.9rem;font-weight:500;color:var(--ink)}
+a.cval:hover{color:var(--accent)}
+
+.avail{
+  background:
+    radial-gradient(circle at top right,rgba(91,177,149,0.18),transparent 28%),
+    linear-gradient(180deg,#f5fbf8 0%,#edf5f0 100%);
+  color:var(--charcoal);
+  border-radius:20px;padding:2.25rem;
+  min-height:100%;
+  position:relative;overflow:hidden;
+  border:1px solid rgba(47,106,82,0.12);
+  box-shadow:0 22px 54px rgba(54,42,25,0.09);
+  transition:transform 0.28s ease,box-shadow 0.28s ease,border-color 0.28s ease;
+}
+.avail:hover{transform:translateY(-4px);box-shadow:0 28px 62px rgba(54,42,25,0.12);border-color:rgba(47,106,82,0.18)}
+.avail h3{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.6rem,2.4vw,2.2rem);color:var(--ink);
+  margin-bottom:1rem;line-height:1.12;
+}
+.avail h3 em{color:var(--accent);font-style:italic}
+.avail p{
+  font-size:0.96rem;line-height:1.82;
+  color:var(--brown);margin-bottom:1.5rem;
+}
+.avail-list{display:flex;flex-direction:column;gap:0.78rem;margin-bottom:1.7rem}
+.ali{
+  display:flex;align-items:center;gap:0.75rem;
+  font-size:0.92rem;color:var(--charcoal);
+}
+.ali-chk{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.8rem;font-weight:700;flex-shrink:0;
+}
+.avail-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:170px;
+  padding:0.95rem 1.45rem;border-radius:999px;
+  background:var(--accent);color:#fff;
+  font-size:0.79rem;font-weight:600;letter-spacing:0.09em;
+  text-transform:uppercase;
+  transition:transform 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
+  box-shadow:0 16px 30px rgba(47,106,82,0.2);
+}
+.avail-cta:hover{transform:translateY(-2px);background:#285641;box-shadow:0 18px 34px rgba(47,106,82,0.24)}
+
+/* â”€â”€â”€ FOOTER â”€â”€â”€ */
+footer{
+  padding:2.5rem 5vw;
+  border-top:1px solid var(--stone);
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:0.5rem;
+}
+.f-brand{
+  font-family:'Playfair Display',serif;
+  font-size:1.05rem;color:var(--ink);
+}
+.f-copy{font-size:0.75rem;color:var(--taupe);letter-spacing:0.04em}
+
+/* â”€â”€â”€ ANIMATIONS â”€â”€â”€ */
+.reveal{
+  opacity:0;transform:translateY(24px);
+  transition:opacity 0.65s ease,transform 0.65s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* â”€â”€â”€ RESPONSIVE â”€â”€â”€ */
+@media(max-width:1020px){
+  .hero-inner,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-blob1,.hero-blob2,.hero-orbit{display:none}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr}
+  .tech-wrap{grid-template-columns:1fr}
+  .te{grid-template-columns:1fr;gap:0.5rem}
+  .timeline-wrap::before,.te::before{display:none}
+}
+@media(max-width:680px){
+  .services-grid,.pub-grid,.portfolio-grid,.quote-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .stats{flex-direction:column}
+  .stat+.stat{border-left:none;border-top:1px solid var(--stone)}
+  footer{flex-direction:column;text-align:center}
+  .xcard-head,.section-cluster,.pub-toolbar{align-items:flex-start}
+  .wmedia{min-height:190px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-dot"></div>
+      Wisdom Kipkemboi
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-txt">GIS / Remote Sensing / GeoAI</span>
+      </div>
+      <h1>Turning geospatial<br>data into <em>decisions</em><br>that matter</h1>
+      <p class="hero-lead">GIS-EO consultant, researcher, Geo-IT specialist, and web-GIS developer with 10+ years transforming geospatial data into actionable insights — for sustainable development, environmental management, and institutional decision-making across East Africa and beyond.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="#portfolio" class="btn-outline">Explore Work</a>
+      </div>
+    </div>
+
+    <!-- ORBIT -->
+    <svg class="hero-orbit" viewBox="0 0 520 300" width="520" height="300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="overflow:visible;">
+      <ellipse cx="260" cy="150" rx="52" ry="64"
+        fill="rgba(115,199,182,0.09)" stroke="rgba(47,106,82,0.16)" stroke-width="1.2"/>
+      <ellipse cx="260" cy="150" rx="248" ry="72" fill="none"
+        stroke="rgba(67,174,162,0.30)" stroke-width="1.6"
+        transform="rotate(-6,260,150)"/>
+      <ellipse cx="260" cy="150" rx="178" ry="52" fill="none"
+        stroke="rgba(67,174,162,0.20)" stroke-width="1.4"
+        transform="rotate(-6,260,150)"/>
+      <circle class="o-halo-a" r="18" fill="rgba(47,106,82,0.06)"/>
+      <circle class="o-halo-d" r="13" fill="rgba(174,124,54,0.07)"/>
+      <circle class="o-dot-a" r="6.5" fill="#2f6a52"/>
+      <circle class="o-dot-b" r="6.5" fill="#2f6a52"/>
+      <circle class="o-dot-c" r="6.5" fill="#2f6a52"/>
+      <circle class="o-dot-d" r="4.5" fill="#ae7c36"/>
+    </svg>
+
+    <!-- ---------HERO V2 -------------------- -->
+
+    <div class="hero-card">
+      <div class="hero-card-head">At a glance</div>
+      <div class="stats">
+        <div class="stat"><span class="stat-n" data-count="10">0<span>+</span></span><span class="stat-l">Years Exp.</span></div>
+        <div class="stat"><span class="stat-n" data-count="100">0<span>+</span></span><span class="stat-l">Clients</span></div>
+        <div class="stat"><span class="stat-n" data-count="100">0<span>+</span></span><span class="stat-l">Projects</span></div>
+      </div>
+      <div class="bars">
+        <div><div class="bar-top"><span class="bar-name">GIS</span><span class="bar-val" data-percent="95">0%</span></div><div class="bar-track"><div class="bar-fill" data-width="95"></div></div></div>
+        <div><div class="bar-top"><span class="bar-name">Earth Observation</span><span class="bar-val" data-percent="85">0%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
+        <div><div class="bar-top"><span class="bar-name">Spatial Data Analysis</span><span class="bar-val" data-percent="90">0%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+        <div><div class="bar-top"><span class="bar-name">Research & Writing</span><span class="bar-val" data-percent="93">0%</span></div><div class="bar-track"><div class="bar-fill" data-width="93"></div></div></div>
+        <div><div class="bar-top"><span class="bar-name">Enterprise GIS & Geoportal</span><span class="bar-val" data-percent="80">0%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="sec-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="sec-eye">About Me</span>
+        <h2 style="margin-bottom:1.75rem">A decade of <em>geospatial</em> impact</h2>
+        <p>I am a GIS and Earth Observation professional with over a decade of experience transforming complex geospatial data into actionable insights. My work spans enterprise GIS, remote sensing, spatial analysis, and data visualisation — with a focus on sustainable development and environmental management.</p>
+        <p>I have deep expertise in ArcGIS Enterprise deployment, web-based GIS development with Django and GeoDjango, and managing spatial databases with PostgreSQL/PostGIS. I leverage Google Earth Engine for remote sensing analysis and work across ArcGIS Pro, QGIS, and ERDAS Imagine.</p>
+        <p>Python powers my GeoAI projects. With a strong background in research and consultancy, I have authored and co-authored multiple peer-reviewed publications and am always open to opportunities that harness geospatial technology for meaningful change.</p>
+      </div>
+      <div class="about-badge-wrap">
+        <div class="about-card">
+          <div class="about-card-label">Current Role</div>
+          <div class="about-card-value">HOD DIKM · Senior GIS/RS Analyst</div>
+          <div class="about-card-sub">CETRAD · 2024 – Present · Nanyuki, Kenya</div>
         </div>
-        <!-- Spinner End -->
-
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/profile2.jpeg" alt="Image">
-                        <h1 class="text-primary mt-2">Wisdom Kipkemboi</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">GIS-EO Consultant, GIS-EO Researcher, Geo-IT Specialist, Web-GIS Developer, Earth Observation Specialist, Geospatial Data Engineer, Spatial Data Scientist</div>
-                        </div>
-                        <!--<div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                        </div> -->
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="#contact" class="btn w-50 border-end btn-scroll" id="requestCV">Request CV</a>
-                            <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>I am a GIS and Earth Observation professional with 10+ years of experience transforming geospatial data into actionable insights. My expertise spans GIS, remote sensing, spatial analysis, and data visualization, with a focus on supporting decision-making for sustainable development.
-                        I have extensive experience in ArcGIS Enterprise deployment and maintenance, web-based GIS development with Django and GeoDjango, and managing spatial databases with PostgreSQL/PostGIS and MySQL. I also leverage Google Earth Engine for remote sensing analysis and work with ArcGIS Pro, QGIS, and ERDAS Imagine. Python is a key tool for my GeoAI projects.
-                        With a strong background in research and consultancy, I have authored and co-authored peer-reviewed publications. I am always open to new opportunities that leverage geospatial technology for meaningful change.</p>
-                        <div class="row mb-4">
-                            <!-- <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Wisdom Kipkemboi
-                            </div> 
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Education:</span> MSc GIS and RS; BSc GIS; CPA 6
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 10+ Years
-                            </div>
-
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> kipwizzdom@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> Nairobi, Kenya
-                            </div> -->
-                            <!-- <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Freelance:</span> Available
-                            </div> -->
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
-                                    <p class="mb-0">+</p>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">100</h1>
-                                    <p class="mb-0">+</p>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Happy</p>
-                                        <h5 class="mb-0">Clients</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">100</h1>
-                                    <p class="mb-0">+</p>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete</p>
-                                        <h5 class="mb-0">Projects</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- About End -->
-
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">GIS</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Earth Observation</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Spatial Data Analysis</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Data Science & Machine Learning</p>
-                                        <p class="mb-2">86%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">GIS Modelling</p>
-                                        <p class="mb-2">88%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Research & Writing</p>
-                                        <p class="mb-2">93%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Data Collection Tools (Customization)</p>
-                                        <p class="mb-2">82%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Enterprise GIS & Geoportal Integration</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress progress-thick">
-                                        <div class="progress-bar bg-white" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Skills End -->
-
-                    <!-- Education Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="education">
-                        <h1 class="title pb-3 mb-5">Education</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">MSc, Geospatial Information Systems & Remote Sensing</h5>
-                                <p class="mb-2">Dedan Kimathi University of Technology | <small>2021 – 2023</small></p>
-                            </div>
-
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">BSc, Geospatial Information Science (Upper Second-Class Honours)</h5>
-                                <p class="mb-2">Dedan Kimathi University of Technology | <small>2013 – 2016</small></p>
-                            </div>
-
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Short Courses & Training</h5>
-                                <p class="mb-2">
-                                  <ul class="mb-2" style="margin-left: -1rem; line-height: 1.4;">
-                                    <li>Application of GIS in Conservation Mapping – RCMRD (Aug 2025)</li>
-                                    <li>Remote Sensing and GIS for Agriculture Informatics – IIRS, India (Aug 2024)</li>
-                                    <li>Drone Flying (Remote Pilot License) – Geoid Technologies Ltd (Apr 2024)</li>
-                                    <li>Data Science and Machine Learning – Africa Data School (Oct–Dec 2020)</li>
-                                    <li>Sinapis Entrepreneurship Training Program – Sinapis (Feb–Sept 2020)</li>
-                                  </ul>
-                                </p>
-                            </div>
-
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Certifications</h5>
-                                <p class="mb-2">
-                                  <ul class="mb-0" style="margin-left: -1rem; line-height: 1.4;">
-                                    <li>Certified Public Accountant (CPA) – KASNEB, Section 6 (2013–2017)</li>
-                                    <li>Azure Fundamentals – Microsoft (Dec 2020)</li>
-                                  </ul>
-                                </p>
-                            </div>
-
-                        </div>
-                    </section>
-                    <!-- Education End -->
-
-
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Expericences</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">HOD DIKM | Senior GIS/RS Analyst</h5>
-                                <p class="mb-2">Centre for Training and Integrated Research in ASAL Development (CETRAD) | <small>2024 - Date</small></p>
-                                <p> Head the <a href="https://cetrad.org/home/services/department-of-information-and-knowledge-management-dikm/" target="_blank" rel="noopener noreferrer"> Department of Information and Knowledge Management (DIKM)</a> and lead geospatial research and applications in ASAL regions, focusing on sustainable transformation, restoration assessment, natural resource management, and GIS-based capacity strengthening.</p>
-
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">MSc Research Assistant</h5>
-                                <p class="mb-2">Dedan Kimathi University of Technology (DeKUT) | <small>2021 - 2024</small></p>
-                                <p>Supported teaching, research, and technical development at IGGReS, focusing on environmental conservation, forest restoration, and climate change mitigation in the Muringato Catchment.</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Technical Lead – GIS & Carbon Projects Management</h5>
-                                <p class="mb-2">Northrift Solutions Ltd | <small>2019 - 2021</small></p>
-                                <p>Led GIS and carbon management projects, delivering spatial solutions, infrastructure upgrades, and policy development for local and international clients</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Land Survey Lecturer </h5>
-                                <p class="mb-2">Eldoret Technical Training Institute | <small>2018 - 2019</small></p>
-                                <p>Taught and coordinated courses in photogrammetry, engineering survey, survey control, and cadastral studies.</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">GIS Analyst</h5>
-                                <p class="mb-2">Northrift Solutions Ltd | <small>2017 - 2019</small></p>
-                                <p>Delivered GIS solutions, application development, and spatial data analysis for public and private sector clients.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Expericence End -->
-
-                    <!-- TO BE WORKED ON LATER
-                    Subscribe Start -->
-                    <!--<section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- Subscribe End -->
-
-                    <!-- Services Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
-                        <div class="row g-4">
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-globe mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">Enterprise GIS & Geoportal Integration</h5>
-                                    <p class="mb-0">Specialized in implementing and integrating Enterprise GIS systems and configuring Geoportals to streamline data sharing, analysis, and decision-making. These solutions improve collaboration across departments and provide real-time access to geospatial data.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-satellite mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">EO Analysis</h5>
-                                    <p class="mb-0">These analysis services utilize satellite imagery and remote sensing data to monitor environmental changes, assess land use, and support decision-making for sustainable development, agriculture, and disaster management.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-chart-area mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">GIS Analysis & Modelling</h5>
-                                    <p class="mb-0">These GIS analysis and modelling services utilize spatial data to identify patterns, assess relationships, and simulate geographic scenarios. They support applications in land use planning, environmental monitoring, infrastructure development, and decision support through advanced geospatial techniques and tools.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-code mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">GIS-EO Development</h5>
-                                    <p class="mb-0">These services combine GIS and Earth Observation technologies to create custom solutions for data collection, monitoring, and reporting. We develop web-based applications and tools that integrate spatial data for enhanced functionality and ease of use.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-flask mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">Research Consultancy</h5>
-                                    <p class="mb-0">These research consultancy services leverage GIS, remote sensing, and spatial analysis to address challenges in environmental management, agriculture, disaster risk reduction, and more. It includes supporting data collection, analysis, and the application of research findings for practical impact.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-chalkboard-teacher mx-auto mb-4 text-primary"></i>
-                                    <h5 class="mb-2">GIS-RS Training</h5>
-                                    <p class="mb-0">The GIS and Remote Sensing (RS) training programs are designed to build technical skills and knowledge in geospatial technologies. Whether you're a beginner or an advanced user, these training sessions will equip you with the skills needed to apply GIS and RS techniques effectively to real-world challenges.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-                    <!-- Services End -->
-
-
-                    <!-- Publications Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="publications">
-                      <h1 class="title pb-3 mb-5">Publications</h1>
-
-                      <!-- Books -->
-                      <div class="mb-4">
-                        <h5><i class="fa fa-book text-primary me-2"></i> Books</h5>
-                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
-                          <li>
-                            Kuria, B. T., Wanjala, J. A., <span style="text-decoration: underline;">Kipkemboi, W.</span>, Muthee, S. W., & Chege, M. W. (2023). 
-                            <em>Let’s Save Our Environment.</em> InterCEN Publishers. ISBN: 978-9914-9679-2-0.
-                          </li>
-                        </ul>
-                      </div>
-
-                      <!-- Peer-reviewed Journal Articles -->
-                      <div class="mb-4">
-                        <h5><i class="fa fa-newspaper text-primary me-2"></i> Peer-reviewed Journal Articles</h5>
-                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
-                          <li>
-                            Steinbach, S., Rienow, A., Chege, M. W., Dedring, N., 
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, et al. (2024). 
-                            Low-cost sensors and multitemporal remote sensing for operational turbidity monitoring in an East African wetland. 
-                            <em>IEEE JSTARS, 17</em>, 8490–8508. 
-                            <a href="https://doi.org/10.1109/JSTARS.2024.3381756" target="_blank">https://doi.org/10.1109/JSTARS.2024.3381756</a>
-                          </li>
-                          <li>
-                            Muthee, S. W., Kuria, B. T., Mundia, C. N., Sichangi, A. W., 
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, et al. (2023). 
-                            SARIMA model to predict evapotranspiration and runoff trends in Muringato river basin. 
-                            <em>Stochastic Environmental Research and Risk Assessment</em>, 1–12. 
-                            <a href="https://doi.org/10.1007/s00477-023-02534-w" target="_blank">https://doi.org/10.1007/s00477-023-02534-w</a>
-                          </li>
-                          <li>
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, Kuria, B. T., Kuria, D. N., Sichangi, A. W., Mundia, C. N., et al. (2023). 
-                            Development of a Web-GIS platform for environmental monitoring in Muringato Catchment, Kenya. 
-                            <em>Journal of Geovisualization and Spatial Analysis, 7(1)</em>, 13. 
-                            <a href="https://doi.org/10.1007/s41651-023-00143-3" target="_blank">https://doi.org/10.1007/s41651-023-00143-3</a>
-                          </li>
-                          <li>
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, Kuria, B. T., Kuria, D. N., Sichangi, A. W., Mundia, C. N., et al. (2022). 
-                            Participatory GIS tool development for environmental and natural resources conservation. 
-                            <em>Environment, Development and Sustainability</em> (Under review).
-                          </li>
-                        </ul>
-                      </div>
-
-                      <!-- Conference Papers & Presentations -->
-                      <div class="mb-4">
-                        <h5><i class="fa fa-chalkboard-teacher text-primary me-2"></i> Conference Papers & Presentations</h5>
-                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
-                          <li>
-                            Thuku, P. N., Kuria, B. T., Muraya, E. M., Chege, M. W., & 
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span> (2025). 
-                            Development of a Web-GIS application to determine farmers’ compliance with European Union Deforestation Regulations: 
-                            A case study of coffee in Muringato Catchment, Nyeri. 
-                            <em>ESRI User Conference (Poster)</em>, San Diego, USA.
-                          </li>
-                          <li>
-                            Kuria, B. T., <span style="text-decoration: underline;">Kipkemboi, W.</span>, Muthee, S. W., Chege, M. W., Wanjala, J. A., & Rienow, A. (2024). 
-                            Enhancing learners’ involvement in participatory environmental conservation. 
-                            <em>43rd EARSeL Symposium</em>, Manchester, UK.
-                          </li>
-                          <li>
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, Kuria, B. T., & Kuria, D. N. (2023). 
-                            Framework for implementing participatory GIS for environmental conservation in Muringato Catchment. 
-                            <em>7th DeKUT International Conference</em>, Nyeri, Kenya.
-                          </li>
-                          <li>
-                            Chege, M. W., Kuria, B. T., Sichangi, A. W., Ngigi, M. M., Muthee, S. W., 
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, & Wanjala, J. A. (2023). 
-                            Spatial monitoring of river discharge using low-cost sensors. 
-                            <em>7th DeKUT International Conference</em>, Nyeri, Kenya.
-                          </li>
-                          <li>
-                            Steinbach, S., Bartels, A., <span style="text-decoration: underline;">Kipkemboi, W.</span>, Dedring, N., et al. (2023). 
-                            Integrating low-cost sensors and remote sensing to monitor small reservoirs in Kenyan wetlands. 
-                            <em>42nd EARSeL Symposium</em>, Bucharest, Romania.
-                          </li>
-                          <li>
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, Kuria, B. T., & Kuria, D. N. (2022). 
-                            Assessing the effectiveness of a participatory GIS tool for environmental conservation in Muringato Catchment. 
-                            <em>41st EARSeL Symposium</em>, Paphos, Cyprus.
-                          </li>
-                          <li>
-                            <span style="text-decoration: underline;">Kipkemboi, W.</span>, Kuria, B. T., & Kuria, D. N. (2022). 
-                            Participatory GIS tool for environmental conservation in Muringato Catchment. 
-                            <em>Living Planet Symposium</em>, Bonn, Germany.
-                          </li>
-                        </ul>
-                      </div>
-
-                      <!-- Theses -->
-                      <div>
-                        <h5><i class="fa fa-graduation-cap text-primary me-2"></i> Theses</h5>
-                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
-                          <li>
-                            <em>MSc Thesis:</em> <span style="text-decoration: underline;">Kipkemboi, W.</span> (2023). 
-                            Participatory GIS Tools for Environmental Conservation: A Case Study of Muringato Catchment Area, Nyeri, Kenya. 
-                            Dedan Kimathi University of Technology.
-                          </li>
-                          <li>
-                            <em>BSc Thesis:</em> <span style="text-decoration: underline;">Kipkemboi, W.</span> (2016). 
-                            A GIS-Based Flood Risk Analysis and Mapping in Nyeri County. Dedan Kimathi University of Technology.
-                          </li>
-                        </ul>
-                      </div>
-                    </section>
-                    <!-- Publications End -->
-
-
-                    <!-- Portfolio Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Portfolio</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Configuration</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Development</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/app1.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center gap-3 flex-column">
-                                                <h5 class="text-light mb-3">Crowd Mapping Mobile Application</h5>
-                                                <a href="https://play.google.com/store/apps/details?id=com.iggreserver.crowdmapping" target="_blank" rel="noopener noreferrer">
-                                                    <i class="bi bi-link text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/geoportal.png" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center gap-3 flex-column">
-                                                <h5 class="text-light mb-3">Geoportals Development</h5>
-                                                <a href="https://iggresserver.dkut.ac.ke:8000/" target="_blank" rel="noopener noreferrer">
-                                                    <i class="bi bi-link text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/esri.png" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center gap-3 flex-column">
-                                                <h5 class="text-light mb-3">ArcGIS Enterpise Management</h5>
-                                                <a href="https://wisdomkipkemboi.maps.arcgis.com/home/index.html" target="_blank" rel="noopener noreferrer">
-                                                    <i class="bi bi-link text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/elearning1.JPG" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center gap-3 flex-column">
-                                                <h5 class="text-light mb-3">E-learning System Configuration</h5>
-                                                <a href="https://iggresapps.dkut.ac.ke/moodle/" target="_blank" rel="noopener noreferrer">
-                                                    <i class="bi bi-link text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Portfolio End -->
-
-                    <!-- Testimonial Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                      <h1 class="title pb-3 mb-5">Testimonial</h1>
-                      <div class="owl-carousel testimonial-carousel">
-
-                        <div class="text-left">
-                          <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                          <p class="fs-5 mb-4">
-                            Wisdom's proficiency in GIS development and programming is truly impressive.
-                            He has a strong foundation in programming languages and geospatial technologies,
-                            making him an asset in any project requiring technical prowess.
-                          </p>
-                          <div class="ps-1">
-                            <p class="text-primary fs-5 mb-1">Martin Chege</p>
-                            <i>Software Developer | Research Assistant | Geospatial Information Science, Remote Sensing Expert</i>
-                          </div>
-                        </div>
-
-                        <div class="text-left">
-                          <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                          <p class="fs-5 mb-4">
-                            Wisdom is a GIS Analyst with a rare combination of technical proficiency, attention to detail,
-                            and a proactive approach to problem-solving. I have full confidence in his abilities and recommend him
-                            wholeheartedly for any position in which his remarkable skills and dedication can shine.
-                          </p>
-                          <div class="ps-1">
-                            <p class="text-primary fs-5 mb-1">Erick Makori</p>
-                            <i>ArcGIS Enterprise</i>
-                          </div>
-                        </div>
-
-                        <!-- <div class="text-left">
-                          <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                          <p class="fs-4 mb-4">
-                            Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore,
-                            stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita.
-                          </p>
-                          <div class="ps-1">
-                            <p class="text-primary fs-5 mb-1">Client Name</p>
-                            <i>Enterprise Technology</i>
-                          </div>
-                        </div> -->
-
-                      </div>
-                    </section>
-                    <!-- Testimonial End -->
-
-
-                    <!-- Contact Version 2 Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                      <h1 class="title pb-3 mb-5">Contact Me</h1>
-
-                      <form id="contact-form">
-                        <div class="row g-3">
-                          <div class="col-md-6">
-                            <div class="form-floating">
-                              <input type="text" class="form-control border-0 bg-secondary" id="name" name="from_name" placeholder="Your Name" required>
-                              <label for="name">Your Name</label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-floating">
-                              <input type="email" class="form-control border-0 bg-secondary" id="email" name="from_email" placeholder="Your Email" required>
-                              <label for="email">Your Email</label>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-floating">
-                              <input type="text" class="form-control border-0 bg-secondary" id="subject" name="subject" placeholder="Subject" required>
-                              <label for="subject">Subject</label>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-floating">
-                              <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" name="message" style="height: 200px" required></textarea>
-                              <label for="message">Message</label>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-
-                      <!-- Message status -->
-                      <p id="form-status" class="mt-3 text-center"></p>
-                    </section>
-                    <!-- Contact End -->
-
-
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-                                <!--<a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>-->
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/wisdom-kipkemboi-msc-ba8281103/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.researchgate.net/profile/Wisdom-Kipkemboi-2" target="_blank"><i class="fab fa-researchgate"></i></a>
-                            </div>
-                            <!-- <div class="d-flex justify-content-center mb-3">
-                                <a class="text-light px-3 border-end" href="#">Privacy</a>
-                                <a class="text-light px-3 border-end" href="#">Terms</a>
-                                <a class="text-light px-3 border-end" href="#">FAQs</a>
-                                <a class="text-light px-3" href="#">Help</a>
-                            </div> -->
-							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
-							<p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a></p> -->
-                        </div>
-                    </section>
-                    <!-- Footer End -->
-                </div>
-            </div>
+        <div class="about-card">
+          <div class="about-card-label">Specialisations</div>
+          <div class="spec-chips">
+            <span class="spec-chip">GIS-EO Consulting</span>
+            <span class="spec-chip">Web-GIS Development</span>
+            <span class="spec-chip">Spatial Data Science</span>
+            <span class="spec-chip">Remote Sensing</span>
+            <span class="spec-chip">Earth Observation</span>
+            <span class="spec-chip">GeoAI / Python</span>
+            <span class="spec-chip">Drone Mapping</span>
+            <span class="spec-chip">Carbon Projects</span>
+          </div>
         </div>
+        <div class="about-card">
+          <div class="about-card-label">Links</div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.25rem">
+            <a href="https://wkipkemboi.github.io/" target="_blank" class="cval" style="font-size:0.88rem;color:var(--accent)">🌐 wkipkemboi.github.io</a>
+            <a href="https://iggresserver.dkut.ac.ke:8000" target="_blank" class="cval" style="font-size:0.88rem;color:var(--accent)">🗺️ IGGReS Geoportal</a>
+            <a href="https://wisdomkipkemboi.maps.arcgis.com/home/index.html" target="_blank" class="cval" style="font-size:0.88rem;color:var(--accent)">📍 ArcGIS Online Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+<div class="divider"></div>
 
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+<!-- SERVICES -->
+<section class="section section-alt" id="services">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">What I Do</span>
+      <h2>Services <em>Offered</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="xcard reveal">
+        <div class="xcard-num">01 — Enterprise GIS</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="xcard-title">Enterprise GIS & Geoportal Integration</div></div>
+        <p class="xcard-desc">Implementing and integrating enterprise GIS systems and geoportals to improve data access, collaboration, analysis, and decision-making across institutions.</p>
+      </div>
+      <div class="xcard reveal">
+        <div class="xcard-num">02 — Earth Observation</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="xcard-title">EO Analysis</div></div>
+        <p class="xcard-desc">Using satellite imagery and remote sensing workflows to monitor environmental change, assess land use, and support agriculture, conservation, and disaster management.</p>
+      </div>
+      <div class="xcard reveal">
+        <div class="xcard-num">03 — Spatial Analysis</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="xcard-title">GIS Analysis & Modelling</div></div>
+        <p class="xcard-desc">Applying spatial analysis and GIS modelling to identify patterns, simulate scenarios, and support land use planning, environmental monitoring, and infrastructure decisions.</p>
+      </div>
+      <div class="xcard reveal">
+        <div class="xcard-num">04 — Web GIS</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="xcard-title">GIS-EO Development</div></div>
+        <p class="xcard-desc">Developing web-based GIS applications and custom tools combining Earth Observation and spatial data for monitoring, reporting, and geospatial communication.</p>
+      </div>
+      <div class="xcard reveal">
+        <div class="xcard-num">05 — Research</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="xcard-title">Research Consultancy</div></div>
+        <p class="xcard-desc">Supporting environmental management, agriculture, and development initiatives through GIS, remote sensing, and evidence-based research outputs.</p>
+      </div>
+      <div class="xcard reveal">
+        <div class="xcard-num">06 — Capacity Building</div>
+        <div class="xcard-head"><div class="xcard-ico"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="xcard-title">GIS-RS Training</div></div>
+        <p class="xcard-desc">Designing and delivering training that equips practitioners and teams to apply GIS and remote sensing methods to real-world environmental and planning challenges.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+<div class="divider"></div>
 
-        <!-- Contact us Scripts START-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script type="text/javascript">
-          (function() {
-            emailjs.init("vmYmh-DCS1h7jxqMX"); // 🔹 Replace with your EmailJS Public Key
-          })();
+<!-- STACK -->
+<section class="section" id="stack">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Tools & Technologies</span>
+      <h2>The <em>Stack</em></h2>
+    </div>
+    <div class="tech-wrap">
+      <div class="tech-tabs" id="techTabs">
+        <div class="ttab on" data-p="gis">GIS Platforms</div>
+        <div class="ttab" data-p="eo">Remote Sensing & EO</div>
+        <div class="ttab" data-p="dev">Development</div>
+        <div class="ttab" data-p="db">Databases</div>
+        <div class="ttab" data-p="lib">Python & GeoAI</div>
+      </div>
+      <div>
+        <div class="tpanel on" id="p-gis">
+          <span class="tpanel-label">GIS Platforms</span>
+          <div class="tags">
+            <span class="tag hi"><span class="tdot"></span>ArcGIS Pro</span>
+            <span class="tag hi"><span class="tdot"></span>ArcGIS Enterprise</span>
+            <span class="tag hi"><span class="tdot"></span>ArcGIS Online</span>
+            <span class="tag">QGIS</span>
+            <span class="tag">GeoServer</span>
+            <span class="tag">MapServer</span>
+            <span class="tag">Leaflet.js</span>
+            <span class="tag">OpenLayers</span>
+          </div>
+        </div>
+        <div class="tpanel" id="p-eo">
+          <span class="tpanel-label">Remote Sensing & Earth Observation</span>
+          <div class="tags">
+            <span class="tag hi"><span class="tdot"></span>Google Earth Engine</span>
+            <span class="tag hi"><span class="tdot"></span>ERDAS Imagine</span>
+            <span class="tag">Sentinel Hub</span>
+            <span class="tag">SNAP</span>
+            <span class="tag">LiDAR Processing</span>
+            <span class="tag">Drone Mapping</span>
+            <span class="tag">Change Detection</span>
+            <span class="tag">Land Cover Classification</span>
+          </div>
+        </div>
+        <div class="tpanel" id="p-dev">
+          <span class="tpanel-label">Development & Frameworks</span>
+          <div class="tags">
+            <span class="tag hi"><span class="tdot"></span>Python</span>
+            <span class="tag hi"><span class="tdot"></span>Django</span>
+            <span class="tag hi"><span class="tdot"></span>GeoDjango</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+        <div class="tpanel" id="p-db">
+          <span class="tpanel-label">Databases & Spatial Storage</span>
+          <div class="tags">
+            <span class="tag hi"><span class="tdot"></span>PostgreSQL</span>
+            <span class="tag hi"><span class="tdot"></span>PostGIS</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">SQLite / SpatiaLite</span>
+            <span class="tag">GeoPackage</span>
+            <span class="tag">File Geodatabase</span>
+          </div>
+        </div>
+        <div class="tpanel" id="p-lib">
+          <span class="tpanel-label">Python Libraries & GeoAI</span>
+          <div class="tags">
+            <span class="tag hi"><span class="tdot"></span>GeoPandas</span>
+            <span class="tag hi"><span class="tdot"></span>Rasterio</span>
+            <span class="tag hi"><span class="tdot"></span>GDAL / OGR</span>
+            <span class="tag">Shapely</span>
+            <span class="tag">Fiona</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-          // Form submission
-          document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+<div class="divider"></div>
 
-            const status = document.getElementById("form-status");
-            status.textContent = "Sending...";
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Career Journey</span>
+      <h2>Professional <em>Experience</em></h2>
+    </div>
+    <div class="timeline-wrap">
+      <div class="te reveal">
+        <div><div class="te-yr">2024 – Present</div><div class="te-org">CETRAD · Nanyuki</div></div>
+        <div>
+          <div class="te-role">HOD DIKM | Senior GIS/RS Analyst</div>
+          <p class="te-desc">Head of the Department of Information and Knowledge Management (DIKM), leading geospatial research and applications in ASAL regions with a focus on sustainable transformation, restoration assessment, natural resource management, and GIS-based capacity strengthening.</p>
+          <div class="te-chips"><span class="chip">ASAL Research</span><span class="chip">Restoration</span><span class="chip">GIS Leadership</span><span class="chip">Natural Resources</span></div>
+        </div>
+      </div>
+      <div class="te reveal">
+        <div><div class="te-yr">2021 – 2024</div><div class="te-org">Dedan Kimathi University of Technology</div></div>
+        <div>
+          <div class="te-role">MSc Research Assistant</div>
+          <p class="te-desc">Supported teaching, research, and technical development at IGGReS, focusing on environmental conservation, forest restoration, and climate change mitigation in the Muringato Catchment. Developed a Web-GIS platform for environmental monitoring.</p>
+          <div class="te-chips"><span class="chip">Research</span><span class="chip">Environmental Monitoring</span><span class="chip">Web-GIS</span><span class="chip">Muringato</span></div>
+        </div>
+      </div>
+      <div class="te reveal">
+        <div><div class="te-yr">2019 – 2021</div><div class="te-org">Northrift Solutions Ltd</div></div>
+        <div>
+          <div class="te-role">Technical Lead — GIS & Carbon Projects Management</div>
+          <p class="te-desc">Led GIS and carbon management projects, delivering spatial solutions, infrastructure upgrades, and policy development support for local and international clients.</p>
+          <div class="te-chips"><span class="chip">Carbon Projects</span><span class="chip">Infrastructure</span><span class="chip">Consultancy</span></div>
+        </div>
+      </div>
+      <div class="te reveal">
+        <div><div class="te-yr">2018 – 2019</div><div class="te-org">Eldoret Technical Training Institute</div></div>
+        <div>
+          <div class="te-role">Land Survey Lecturer</div>
+          <p class="te-desc">Taught and coordinated courses in photogrammetry, engineering survey, survey control, and cadastral studies.</p>
+          <div class="te-chips"><span class="chip">Teaching</span><span class="chip">Surveying</span><span class="chip">Photogrammetry</span></div>
+        </div>
+      </div>
+      <div class="te reveal">
+        <div><div class="te-yr">2017 – 2019</div><div class="te-org">Northrift Solutions Ltd</div></div>
+        <div>
+          <div class="te-role">GIS Analyst</div>
+          <p class="te-desc">Delivered GIS solutions, application development, and spatial data analysis for public and private sector clients.</p>
+          <div class="te-chips"><span class="chip">GIS Analysis</span><span class="chip">Application Development</span><span class="chip">Client Delivery</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            emailjs.sendForm("service_a6n0pgu", "template_sdo3oo5", this)
-              .then(() => {
-                status.textContent = "✅ Message sent successfully!";
-                this.reset();
-              }, (error) => {
-                console.error("EmailJS error:", error);
-                status.textContent = "❌ Failed to send message. Try again later.";
-              });
-          });
-        </script>
+<div class="divider"></div>
 
-        <!-- Contact us Scripts END -->
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Education</span>
+      <h2>Academic <em>Background</em></h2>
+    </div>
+    <div class="edu-grid" style="margin-bottom:2.5rem">
+      <div class="edu-card reveal">
+        <div class="edu-degree">MSc</div>
+        <div class="edu-title">Geospatial Information Systems & Remote Sensing</div>
+        <div class="edu-institution">Dedan Kimathi University of Technology · 2021–2023</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-degree">BSc · Upper Second-Class Honours</div>
+        <div class="edu-title">Geospatial Information Science</div>
+        <div class="edu-institution">Dedan Kimathi University of Technology · 2013–2016</div>
+      </div>
+    </div>
+    <div class="section-cluster">
+      <span class="sec-eye" style="margin-bottom:0;display:block">Certifications & Training</span>
+      <div class="meta-count">7 items</div>
+    </div>
+    <div class="edu-grid is-collapsed" id="certGrid">
+      <div class="edu-card reveal">
+        <div class="edu-degree">Training</div>
+        <div class="edu-title">Application of GIS in Conservation Mapping</div>
+        <div class="edu-institution">RCMRD · Aug 2025</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-degree">Training</div>
+        <div class="edu-title">Remote Sensing and GIS for Agriculture Informatics</div>
+        <div class="edu-institution">IIRS, India · Aug 2024</div>
+      </div>
+      <div class="edu-card reveal is-extra">
+        <div class="edu-degree">Training</div>
+        <div class="edu-title">Drone Flying (Remote Pilot License)</div>
+        <div class="edu-institution">Geoid Technologies Ltd · Apr 2024</div>
+      </div>
+      <div class="edu-card reveal is-extra">
+        <div class="edu-degree">Training</div>
+        <div class="edu-title">Data Science and Machine Learning</div>
+        <div class="edu-institution">Africa Data School · Oct–Dec 2020</div>
+      </div>
+      <div class="edu-card reveal is-extra">
+        <div class="edu-degree">Training</div>
+        <div class="edu-title">Sinapis Entrepreneurship Training Program</div>
+        <div class="edu-institution">Sinapis · Feb–Sept 2020</div>
+      </div>
+      <div class="edu-card reveal is-extra">
+        <div class="edu-degree">Certification</div>
+        <div class="edu-title">Certified Public Accountant (CPA)</div>
+        <div class="edu-institution">KASNEB · Section 6, 2013–2017</div>
+      </div>
+      <div class="edu-card reveal is-extra">
+        <div class="edu-degree">Certification</div>
+        <div class="edu-title">Azure Fundamentals</div>
+        <div class="edu-institution">Microsoft · Dec 2020</div>
+      </div>
+    </div>
+    <div style="margin-top:1.25rem">
+      <button class="toggle-btn" type="button" data-toggle="certGrid" data-more="Show full certification list" data-less="Show fewer certifications">Show full certification list</button>
+    </div>
+  </div>
+</section>
 
-        <!-- Request CV Script START -->
+<div class="divider"></div>
 
-            <script>
-            document.getElementById('requestCV').addEventListener('click', function() {
-              // Wait briefly to allow scroll to complete
-              setTimeout(() => {
-                const subjectField = document.getElementById('subject');
-                const messageField = document.getElementById('message');
+<!-- PUBLICATIONS -->
+<section class="section section-alt" id="publications">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Research Output</span>
+      <h2>Selected <em>Publications</em></h2>
+    </div>
+    <div class="pub-toolbar">
+      <div class="pub-filters">
+        <button class="pub-filter active" type="button" data-filter="all">All</button>
+        <button class="pub-filter" type="button" data-filter="journal">Journal</button>
+        <button class="pub-filter" type="button" data-filter="conference">Conference</button>
+        <button class="pub-filter" type="button" data-filter="book-thesis">Book &amp; Thesis</button>
+      </div>
+      <button class="toggle-btn" type="button" data-toggle="pubGrid" data-more="Show all publications" data-less="Show fewer publications">Show all publications</button>
+    </div>
+    <div class="pub-grid is-collapsed" id="pubGrid">
+      <div class="pcard reveal" data-type="journal">
+        <span class="py-badge">2024 · Journal</span>
+        <div class="ptitle">Low-cost sensors and multitemporal remote sensing for operational turbidity monitoring in an East African wetland</div>
+        <div><div class="pjournal">Steinbach, Rienow, Chege, Dedring, Kipkemboi et al. · IEEE JSTARS, 17, 8490–8508</div><span class="prole">Co-author</span></div>
+        <a class="plink" href="https://doi.org/10.1109/JSTARS.2024.3381756" target="_blank" rel="noreferrer">View publication →</a>
+      </div>
+      <div class="pcard reveal" data-type="journal">
+        <span class="py-badge">2023 · Journal</span>
+        <div class="ptitle">Development of a Web-GIS platform for environmental monitoring in Muringato Catchment, Kenya</div>
+        <div><div class="pjournal">Kipkemboi, Kuria et al. · Journal of Geovisualization and Spatial Analysis, 7(1), 13</div><span class="prole">Author</span></div>
+        <a class="plink" href="https://doi.org/10.1007/s41651-023-00143-3" target="_blank" rel="noreferrer">View publication →</a>
+      </div>
+      <div class="pcard reveal" data-type="journal">
+        <span class="py-badge">2023 · Journal</span>
+        <div class="ptitle">SARIMA model to predict evapotranspiration and runoff trends in Muringato river basin</div>
+        <div><div class="pjournal">Muthee, Kuria, Mundia, Sichangi, Kipkemboi et al. · Stochastic Environmental Research and Risk Assessment</div><span class="prole">Co-author</span></div>
+        <a class="plink" href="https://doi.org/10.1007/s00477-023-02534-w" target="_blank" rel="noreferrer">View publication →</a>
+      </div>
+      <div class="pcard reveal is-extra" data-type="journal">
+        <span class="py-badge under-review">2022 · Under Review</span>
+        <div class="ptitle">Participatory GIS tool development for environmental and natural resources conservation</div>
+        <div><div class="pjournal">Environment, Development and Sustainability</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2025 · Conference</span>
+        <div class="ptitle">Development of a Web-GIS application to determine farmers' compliance with European Union Deforestation Regulations</div>
+        <div><div class="pjournal">Thuku, Kuria, Muraya, Chege, Kipkemboi · ESRI User Conference (Poster) · San Diego, USA</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2024 · Conference</span>
+        <div class="ptitle">Enhancing learners' involvement in participatory environmental conservation</div>
+        <div><div class="pjournal">Kuria, Kipkemboi, Muthee, Chege, Wanjala, Rienow · 43rd EARSeL Symposium · Manchester, UK</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2023 · Conference</span>
+        <div class="ptitle">Framework for implementing participatory GIS for environmental conservation in Muringato Catchment</div>
+        <div><div class="pjournal">Kipkemboi, Kuria, Kuria · 7th DeKUT International Conference · Nyeri, Kenya</div><span class="prole">Author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2023 · Conference</span>
+        <div class="ptitle">Spatial monitoring of river discharge using low-cost sensors</div>
+        <div><div class="pjournal">Chege, Kuria, Sichangi, Ngigi, Muthee, Kipkemboi, Wanjala · 7th DeKUT International Conference · Nyeri, Kenya</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2023 · Conference</span>
+        <div class="ptitle">Integrating low-cost sensors and remote sensing to monitor small reservoirs in Kenyan wetlands</div>
+        <div><div class="pjournal">Steinbach, Bartels, Kipkemboi et al. · 42nd EARSeL Symposium · Bucharest, Romania</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2022 · Conference</span>
+        <div class="ptitle">Assessing the effectiveness of a participatory GIS tool for environmental conservation in Muringato Catchment</div>
+        <div><div class="pjournal">Kipkemboi, Kuria, Kuria · 41st EARSeL Symposium · Paphos, Cyprus</div><span class="prole">Author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="conference">
+        <span class="py-badge conf">2022 · Conference</span>
+        <div class="ptitle">Participatory GIS tool for environmental conservation in Muringato Catchment</div>
+        <div><div class="pjournal">Kipkemboi, Kuria, Kuria · Living Planet Symposium · Bonn, Germany</div><span class="prole">Author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="book-thesis">
+        <span class="py-badge book-thesis">Book</span>
+        <div class="ptitle">Let's Save Our Environment</div>
+        <div><div class="pjournal">Kuria, Wanjala, Kipkemboi, Muthee, Chege · InterCEN Publishers · 2023 · ISBN 978-9914-9679-2-0</div><span class="prole">Co-author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="book-thesis">
+        <span class="py-badge book-thesis">MSc Thesis</span>
+        <div class="ptitle">Participatory GIS Tools for Environmental Conservation: A Case Study of Muringato Catchment Area, Nyeri, Kenya</div>
+        <div><div class="pjournal">Dedan Kimathi University of Technology · 2023</div><span class="prole">Author</span></div>
+      </div>
+      <div class="pcard reveal is-extra" data-type="book-thesis">
+        <span class="py-badge book-thesis">BSc Thesis</span>
+        <div class="ptitle">A GIS-Based Flood Risk Analysis and Mapping in Nyeri County</div>
+        <div><div class="pjournal">Dedan Kimathi University of Technology · 2016</div><span class="prole">Author</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                if (subjectField) subjectField.value = 'Request for CV';
-                if (messageField) {
-                  messageField.value = 'Hi, I would like to request a copy of your CV. Please share it at your earliest convenience.';
-                }
-              }, 600); // half a second delay
-            });
-            </script>
+<div class="divider"></div>
 
+<!-- PORTFOLIO / PROJECTS -->
+<section class="section" id="portfolio">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Selected Work</span>
+      <h2>Projects & <em>Platforms</em></h2>
+    </div>
+    <div class="pub-toolbar" style="margin-bottom:1.6rem">
+      <div class="pub-filters">
+        <button class="pub-filter active" type="button" data-project-filter="all">All</button>
+        <button class="pub-filter" type="button" data-project-filter="configuration">Configuration</button>
+        <button class="pub-filter" type="button" data-project-filter="development">Development</button>
+      </div>
+    </div>
+    <div class="portfolio-grid">
+      <div class="wcard reveal" data-project-type="development">
+        <!--<div class="wmedia map-crowd"></div>-->
+        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="Crowd mapping mobile application interface" /> </div>
+        <div class="wcard-body">
+          <span class="wcat">Development</span>
+          <div class="wtitle">Crowd Mapping Mobile Application</div>
+          <p class="wdesc">Mobile application for collaborative geospatial field data collection, reporting, and location-based monitoring workflows.</p>
+          <a class="plink" href="https://play.google.com/store/apps/details?id=com.iggreserver.crowdmapping" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </div>
+      <div class="wcard reveal" data-project-type="configuration">
+        <!--<div class="wmedia map-geoportal"></div>-->
+        <div class="wmedia"> <img src="Geoportal-preview.jpg" alt="Geoportal interface" /> </div>
+        <div class="wcard-body">
+          <span class="wcat">Configuration</span>
+          <div class="wtitle">Geoportals Development</div>
+          <p class="wdesc">Geoportal configuration and deployment focused on spatial data discovery, access, sharing, and institutional dissemination.</p>
+          <a class="plink" href="https://iggresserver.dkut.ac.ke:8000" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </div>
+      <div class="wcard reveal" data-project-type="configuration">
+        <!--<div class="wmedia map-enterprise"></div>-->
+        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="ArcGIS Enterprise interface" /> </div>
+        <div class="wcard-body">
+          <span class="wcat">Configuration</span>
+          <div class="wtitle">ArcGIS Enterprise Management</div>
+          <p class="wdesc">Administration and platform management for enterprise GIS publishing, multi-user services, and operational geospatial delivery.</p>
+          <a class="plink" href="https://wisdomkipkemboi.maps.arcgis.com/home/index.html" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </div>
+      <div class="wcard reveal" data-project-type="configuration">
+        <!--<div class="wmedia map-elearn"></div>-->
+        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="E-learning interface" /> </div>
+        <div class="wcard-body">
+          <span class="wcat">Education Technology</span>
+          <div class="wtitle">E-learning System Configuration</div>
+          <p class="wdesc">Configuration and support for digital learning infrastructure linked to environmental education and geospatial learning delivery.</p>
+          <a class="plink" href="https://iggresapps.dkut.ac.ke/moodle/" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Request CV Script END -->
+<div class="divider"></div>
 
-    </body>
+<!-- TESTIMONIALS -->
+<section class="section section-alt" id="testimonials">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Testimonials</span>
+      <h2>What colleagues <em>say</em></h2>
+    </div>
+    <div class="quote-grid">
+      <div class="qcard reveal">
+        <div class="qmark">&ldquo;</div>
+        <p class="qtext">Wisdom's proficiency in GIS development and programming is truly impressive. He has a strong foundation in programming languages and geospatial technologies, making him an asset in any project requiring technical prowess.</p>
+        <div class="qauthor">
+          <div class="qavatar">MC</div>
+          <div>
+            <div class="qname">Martin Chege</div>
+            <div class="qrole">Software Developer · Research Assistant · Geospatial Information Science</div>
+          </div>
+        </div>
+      </div>
+      <div class="qcard reveal">
+        <div class="qmark">&ldquo;</div>
+        <p class="qtext">Wisdom is a GIS Analyst with a rare combination of technical proficiency, attention to detail, and a proactive approach to problem-solving. I have full confidence in his abilities and recommend him wholeheartedly for any position where his remarkable skills and dedication can shine.</p>
+        <div class="qauthor">
+          <div class="qavatar">EM</div>
+          <div>
+            <div class="qname">Erick Makori</div>
+            <div class="qrole">ArcGIS Enterprise Specialist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-eye">Let's Work Together</span>
+      <h2>Get in <em>touch</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <p class="cintro">Open to opportunities that leverage geospatial technology for meaningful change — including research collaborations, enterprise GIS projects, geospatial system development, EO analysis, and sustainable development initiatives.</p>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><span class="clabel">Portfolio Website</span><a class="cval" href="https://wkipkemboi.github.io/" target="_blank">wkipkemboi.github.io</a></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><span class="clabel">Location</span><span class="cval">Nairobi, Kenya</span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div><span class="clabel">Current Role</span><span class="cval">HOD DIKM | Senior GIS/RS Analyst at CETRAD</span></div>
+        </div>
+        <div class="citem">
+          <div class="cico"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+          <div><span class="clabel">ArcGIS Platform</span><a class="cval" href="https://wisdomkipkemboi.maps.arcgis.com/home/index.html" target="_blank">Maps & platform profile</a></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="avail">
+          <h3>Currently <em>available</em> for</h3>
+          <!--<p>Bringing 10+ years of geospatial expertise to projects that create practical impact across research, institutions, and digital geospatial systems.</p>-->
+          <div class="avail-list">
+            <div class="ali"><div class="ali-chk">+</div>GIS & Remote Sensing Consultancy</div>
+            <div class="ali"><div class="ali-chk">+</div>ArcGIS Enterprise Deployment</div>
+            <div class="ali"><div class="ali-chk">+</div>Web GIS Application Development</div>
+            <div class="ali"><div class="ali-chk">+</div>GeoAI & Python Projects</div>
+            <div class="ali"><div class="ali-chk">+</div>Research Collaborations</div>
+            <div class="ali"><div class="ali-chk">+</div>GIS-RS Training & Capacity Building</div>
+          </div>
+          <a class="avail-cta" href="mailto:YOUR_EMAIL@HERE.com?subject=Geospatial%20Project%20Inquiry">Start a Conversation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="f-brand">Wisdom Kipkemboi</span>
+  <span class="f-copy">GIS & Earth Observation Portfolio · Nairobi, Kenya</span>
+  <span class="f-copy">&copy; 2025 &middot; All rights reserved</span>
+</footer>
+
+<script>
+// Tech stack tabs
+document.querySelectorAll('.ttab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.ttab').forEach(x => x.classList.remove('on'));
+    document.querySelectorAll('.tpanel').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    document.getElementById('p-' + t.dataset.p).classList.add('on');
+  });
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = (i % 3) * 0.1 + 's';
+  observer.observe(el);
+});
+
+// Hero stats and skill bars
+const heroCard = document.querySelector('.hero-card');
+let heroMetricsAnimated = false;
+
+const animateValue = (el, target, suffix = '') => {
+  const duration = 1400;
+  const start = performance.now();
+  const step = now => {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.firstChild.textContent = Math.round(target * eased);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.firstChild.textContent = target;
+  };
+  requestAnimationFrame(step);
+};
+
+if (heroCard) {
+  const heroObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting || heroMetricsAnimated) return;
+      heroMetricsAnimated = true;
+
+      document.querySelectorAll('.stat-n[data-count]').forEach(el => {
+        animateValue(el, Number(el.dataset.count));
+      });
+
+      document.querySelectorAll('.bar-val[data-percent]').forEach(el => {
+        const target = Number(el.dataset.percent);
+        const proxy = { value: 0 };
+        const duration = 1300;
+        const start = performance.now();
+        const tick = now => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          proxy.value = Math.round(target * eased);
+          el.textContent = proxy.value + '%';
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target + '%';
+        };
+        requestAnimationFrame(tick);
+      });
+
+      document.querySelectorAll('.bar-fill[data-width]').forEach(el => {
+        requestAnimationFrame(() => {
+          el.style.width = el.dataset.width + '%';
+        });
+      });
+
+      heroObserver.unobserve(heroCard);
+    });
+  }, { threshold: 0.35 });
+
+  heroObserver.observe(heroCard);
+}
+
+// Expandable compact sections
+document.querySelectorAll('[data-toggle]').forEach(button => {
+  button.addEventListener('click', () => {
+    const target = document.getElementById(button.dataset.toggle);
+    if (!target) return;
+    const collapsed = target.classList.toggle('is-collapsed');
+    button.textContent = collapsed ? button.dataset.more : button.dataset.less;
+  });
+});
+
+// Publication grouping
+const pubFilters = document.querySelectorAll('[data-filter]');
+const pubCards = document.querySelectorAll('#pubGrid .pcard');
+pubFilters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    pubFilters.forEach(btn => btn.classList.remove('active'));
+    filter.classList.add('active');
+    const type = filter.dataset.filter;
+    pubCards.forEach(card => {
+      const match = type === 'all' || card.dataset.type === type;
+      card.classList.toggle('is-hidden', !match);
+    });
+  });
+});
+
+// Project grouping
+const projectFilters = document.querySelectorAll('[data-project-filter]');
+const projectCards = document.querySelectorAll('[data-project-type]');
+projectFilters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    projectFilters.forEach(btn => btn.classList.remove('active'));
+    filter.classList.add('active');
+    const type = filter.dataset.projectFilter;
+    projectCards.forEach(card => {
+      const match = type === 'all' || card.dataset.projectType === type;
+      card.classList.toggle('is-hidden', !match);
+    });
+  });
+});
+
+// Sticky nav active state
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 100;
+  sections.forEach(s => {
+    if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + s.id ? 'var(--accent)' : '';
+      });
+    }
+  });
+});
+
+// Orbit parametric animation
+(function(){
+  const ROT = -6 * Math.PI / 180;
+  const OR  = { cx:260, cy:150, rx:248, ry:72 };
+  const IR  = { cx:260, cy:150, rx:178, ry:52 };
+
+  function pt(ring, deg) {
+    const r = deg * Math.PI / 180;
+    const x0 = ring.rx * Math.cos(r), y0 = ring.ry * Math.sin(r);
+    return {
+      x: ring.cx + x0*Math.cos(ROT) - y0*Math.sin(ROT),
+      y: ring.cy + x0*Math.sin(ROT) + y0*Math.cos(ROT)
+    };
+  }
+
+  const dA = document.querySelector('.o-dot-a');
+  if (!dA) return;
+  const dB = document.querySelector('.o-dot-b');
+  const dC = document.querySelector('.o-dot-c');
+  const dD = document.querySelector('.o-dot-d');
+  const hA = document.querySelector('.o-halo-a');
+  const hD = document.querySelector('.o-halo-d');
+
+  let t0 = null;
+  function frame(ts) {
+    if (!t0) t0 = ts;
+    const ms = ts - t0;
+    const oa = (ms / 14000) * 360;
+    const ia = -(ms / 9000) * 360;
+    const pA = pt(OR, oa), pB = pt(OR, oa+120), pC = pt(OR, oa+240), pD = pt(IR, ia);
+    [dA,hA].forEach(e=>{ e.setAttribute('cx',pA.x); e.setAttribute('cy',pA.y); });
+    dB.setAttribute('cx',pB.x); dB.setAttribute('cy',pB.y);
+    dC.setAttribute('cx',pC.x); dC.setAttribute('cy',pC.y);
+    [dD,hD].forEach(e=>{ e.setAttribute('cx',pD.x); e.setAttribute('cy',pD.y); });
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
 </html>
+
