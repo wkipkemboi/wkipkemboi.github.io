@@ -1,71 +1,59 @@
 # Wisdom Kipkemboi
 
-GIS & Earth Observation Consultant | GeoAI | Remote Sensing | Web-GIS Development
+**GIS & Earth Observation Consultant | GeoAI | Remote Sensing | Web-GIS Development**
 
-Transforming geospatial data into actionable insights for environmental monitoring, restoration assessment, and spatial decision support.
+GIS & Earth Observation professional with **10+ years of experience** delivering geospatial solutions for environmental monitoring, restoration assessment, natural resource management, and sustainable development.
 
-🌍 Kenya
-📧 kipwizzdom@gmail.com
-🔗 Portfolio: https://wisdomkipkemboi.github.io
-🔗 LinkedIn: https://www.linkedin.com/in/wisdom-kipkemboi-msc-ba8281103/
+**Designing geospatial systems that turn Earth Observation data into actionable intelligence for environmental management, restoration, and sustainable development.**
+
+🌐 **Portfolio:** https://wisdomkipkemboi.github.io
 
 ---
 
 ## Areas of Expertise
 
-- GIS & Spatial Analysis
-- Remote Sensing & Earth Observation
-- Google Earth Engine Applications
-- GeoAI & Machine Learning
-- Web-GIS Development
-- Enterprise GIS Administration
+* Geographic Information Systems (GIS)
+* Remote Sensing & Earth Observation
+* Google Earth Engine Application Development
+* GeoAI & Spatial Machine Learning
+* Spatial Data Science & Analytics
+* Environmental Monitoring Systems
+* Land Cover & Land Use Mapping
+* Restoration Assessment & Monitoring
+* Natural Resource Management
+* Climate & Carbon Analytics
+* Web-GIS & Spatial Decision Support Systems
+* Enterprise GIS Architecture & Administration
+* Geospatial Capacity Development & Training
 
 ---
 
 ## Technology Stack
 
-**GIS & EO**
-ArcGIS Pro • QGIS • Google Earth Engine • ERDAS Imagine
+### GIS & Earth Observation
 
-**Development**
-Python • JavaScript • Django • GeoDjango
+ArcGIS Pro • ArcGIS Enterprise • ArcGIS Server • Portal for ArcGIS • ArcGIS Online • QGIS • Google Earth Engine • ERDAS Imagine • ENVI • Global Mapper
 
-**Databases**
-PostgreSQL/PostGIS • MySQL
+### Programming & Development
 
-**Enterprise GIS**
-ArcGIS Enterprise • ArcGIS Server
+Python • JavaScript • HTML5 • CSS3 • Django • GeoDjango • Flask • REST APIs
 
----
+### Spatial Databases
 
-## Current Role
+PostgreSQL/PostGIS • MySQL • Spatial SQL • Database Design & Optimization
 
-**Head, Department of Information & Knowledge Management (DIKM)**
-Centre for Training and Integrated Research in ASAL Development (CETRAD)
+### Geospatial Web Technologies
 
-Leading geospatial research, Earth Observation applications, environmental monitoring systems, and spatial decision-support initiatives across Kenya's ASAL regions.
+GeoServer • OpenLayers • Leaflet • MapServer • Web-GIS Application Development
 
----
+### Data Science & GeoAI
 
-## Selected Publications
+NumPy • Pandas • GeoPandas • Scikit-learn • Machine Learning • Spatial Statistics • Data Visualization
 
-📖 Development of a Web-Based GIS Platform for Environmental Monitoring and Conservation of the Muringato Catchment
+### Cloud & Infrastructure
 
-📖 Low-Cost Sensors and Multitemporal Remote Sensing for Operational Turbidity Monitoring in an East African Wetland Environment
-
-📖 Using the SARIMA Model to Predict Trends of Evapotranspiration and Runoff in the Muringato River Basin, Kenya
+Google Cloud Platform • Earth Engine Cloud Infrastructure • Linux Server Administration • Enterprise GIS Deployment
 
 ---
 
-## Featured Projects
-
-- Earth Observation Applications (Google Earth Engine)
-- Geoportal Development & Deployment
-- Web-GIS Platforms
-- Environmental Monitoring Systems
-- Spatial Decision Support Tools
-
----
-
-⭐ Explore my full portfolio:
-https://wisdomkipkemboi.github.io
+🌍 **Turning geospatial data into actionable intelligence.**
