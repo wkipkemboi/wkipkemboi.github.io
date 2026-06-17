@@ -1,10 +1,17 @@
 # Wisdom Kipkemboi
 
-GIS & Earth Observation Professional | GeoAI | Remote Sensing | Web-GIS Development
+GIS & Earth Observation Consultant | GeoAI | Remote Sensing | Web-GIS Development
 
-I am a GIS and Earth Observation consultant with 10+ years of experience developing geospatial solutions for environmental monitoring, natural resource management, restoration assessment, and spatial decision support.
+Transforming geospatial data into actionable insights for environmental monitoring, restoration assessment, and spatial decision support.
 
-## Expertise
+🌍 Kenya
+📧 kipwizzdom@gmail.com
+🔗 Portfolio: https://wisdomkipkemboi.github.io
+🔗 LinkedIn: https://www.linkedin.com/in/wisdom-kipkemboi-msc-ba8281103/
+
+---
+
+## Areas of Expertise
 
 - GIS & Spatial Analysis
 - Remote Sensing & Earth Observation
@@ -12,24 +19,53 @@ I am a GIS and Earth Observation consultant with 10+ years of experience develop
 - GeoAI & Machine Learning
 - Web-GIS Development
 - Enterprise GIS Administration
-- Environmental Monitoring Systems
 
-## Technologies
+---
 
-ArcGIS Pro • QGIS • Google Earth Engine • Python • JavaScript • Django • GeoDjango • PostgreSQL/PostGIS • ArcGIS Enterprise
+## Technology Stack
+
+**GIS & EO**
+ArcGIS Pro • QGIS • Google Earth Engine • ERDAS Imagine
+
+**Development**
+Python • JavaScript • Django • GeoDjango
+
+**Databases**
+PostgreSQL/PostGIS • MySQL
+
+**Enterprise GIS**
+ArcGIS Enterprise • ArcGIS Server
+
+---
+
+## Current Role
+
+**Head, Department of Information & Knowledge Management (DIKM)**
+Centre for Training and Integrated Research in ASAL Development (CETRAD)
+
+Leading geospatial research, Earth Observation applications, environmental monitoring systems, and spatial decision-support initiatives across Kenya's ASAL regions.
+
+---
 
 ## Selected Publications
 
-- Development of a Web-Based GIS Platform for Environmental Monitoring and Conservation of the Muringato Catchment (2023)
-- Low-Cost Sensors and Multitemporal Remote Sensing for Operational Turbidity Monitoring in an East African Wetland Environment (2024)
-- Using the SARIMA Model to Predict Trends of Evapotranspiration and Runoff in the Muringato River Basin, Kenya (2023)
+📖 Development of a Web-Based GIS Platform for Environmental Monitoring and Conservation of the Muringato Catchment
 
-## Portfolio
+📖 Low-Cost Sensors and Multitemporal Remote Sensing for Operational Turbidity Monitoring in an East African Wetland Environment
 
-🌐 https://wisdomkipkemboi.github.io
+📖 Using the SARIMA Model to Predict Trends of Evapotranspiration and Runoff in the Muringato River Basin, Kenya
 
-## Connect
+---
 
-- LinkedIn: https://www.linkedin.com/in/wisdom-kipkemboi-msc-ba8281103/
-- ResearchGate: https://www.researchgate.net/profile/Wisdom-Kipkemboi-2
-- Email: kipwizzdom@gmail.com
+## Featured Projects
+
+- Earth Observation Applications (Google Earth Engine)
+- Geoportal Development & Deployment
+- Web-GIS Platforms
+- Environmental Monitoring Systems
+- Spatial Decision Support Tools
+
+---
+
+⭐ Explore my full portfolio:
+https://wisdomkipkemboi.github.io
