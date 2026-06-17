@@ -527,22 +527,41 @@ h2 em{color:var(--accent);font-style:italic}
   transform:scaleX(0);transform-origin:left;transition:transform 0.3s;
 }
 .wcard:hover::before{transform:scaleX(1)}
-.wmedia{
+/*.wmedia{
   min-height:220px;position:relative;overflow:hidden;
   border-bottom:1px solid rgba(0,0,0,0.05);
+}*/
+.wmedia{
+  height:220px;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid rgba(0,0,0,0.05);
 }
-.wmedia::before{
+.wmedia img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+/*.wmedia::before{
   content:'';position:absolute;inset:0;
   background:
     radial-gradient(circle at 20% 22%,rgba(255,255,255,0.28),transparent 16%),
     linear-gradient(135deg,rgba(255,255,255,0.2),transparent 40%),
     linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.18));
-}
-.wmedia::after{
+}*/
+/*.wmedia::after{
   content:'';position:absolute;inset:auto 18px 18px 18px;height:44px;
   border-radius:12px;background:rgba(255,255,255,0.18);
   backdrop-filter:blur(6px);
   border:1px solid rgba(255,255,255,0.18);
+}*/
+.wmedia img,
+.wmedia video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 .wmedia.map-crowd{
   background:
@@ -1219,18 +1238,40 @@ footer{
     </div>
     <div class="portfolio-grid">
       <div class="wcard reveal" data-project-type="development">
+        <div class="wmedia">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="img/landslide2.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+            </div>
+            <div class="wcard-body"> <span class="wcat">GeoAI & Earth Observation</span>
+              <div class="wtitle"> Google Earth Engine App Development </div>
+              <p class="wdesc"> Development of interactive GEE EO applications for environmental monitoring, spatial analysis, and geospatial decision support.
+              </p>
+              <a class="plink" href="https://ee-kipwizzdom.projects.earthengine.app/" target="_blank" rel="noreferrer"> More applications → </a>
+            </div>
+      </div>
+      <div class="wcard reveal" data-project-type="configuration">
+        <!--<div class="wmedia map-elearn"></div>-->
+        <div class="wmedia"> <img src="img/elearning1.jpg" alt="E-learning interface" /> </div>
+        <div class="wcard-body">
+          <span class="wcat">Education Technology</span>
+          <div class="wtitle">E-learning System Configuration</div>
+          <p class="wdesc">Configuration and support for digital learning infrastructure linked to environmental education and geospatial learning delivery.</p>
+          <a class="plink" href="https://iggresapps.dkut.ac.ke/moodle/" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </div>
+      <div class="wcard reveal" data-project-type="development">
         <!--<div class="wmedia map-crowd"></div>-->
-        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="Crowd mapping mobile application interface" /> </div>
+        <div class="wmedia"> <img src="img/app1.jpg" alt="Crowd mapping mobile application interface" /> </div>
         <div class="wcard-body">
           <span class="wcat">Development</span>
           <div class="wtitle">Crowd Mapping Mobile Application</div>
           <p class="wdesc">Mobile application for collaborative geospatial field data collection, reporting, and location-based monitoring workflows.</p>
-          <a class="plink" href="https://play.google.com/store/apps/details?id=com.iggreserver.crowdmapping" target="_blank" rel="noreferrer">Open project →</a>
+          <a class="plink" href="https://github.com/profileshub/crowdmapping" target="_blank" rel="noreferrer">Open project →</a>
         </div>
       </div>
       <div class="wcard reveal" data-project-type="configuration">
         <!--<div class="wmedia map-geoportal"></div>-->
-        <div class="wmedia"> <img src="Geoportal-preview.jpg" alt="Geoportal interface" /> </div>
+        <div class="wmedia"> <img src="img/geoportal.png" alt="Geoportal interface" /> </div>
         <div class="wcard-body">
           <span class="wcat">Configuration</span>
           <div class="wtitle">Geoportals Development</div>
@@ -1240,7 +1281,7 @@ footer{
       </div>
       <div class="wcard reveal" data-project-type="configuration">
         <!--<div class="wmedia map-enterprise"></div>-->
-        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="ArcGIS Enterprise interface" /> </div>
+        <div class="wmedia"> <img src="img/esri.png" alt="ArcGIS Enterprise interface" /> </div>
         <div class="wcard-body">
           <span class="wcat">Configuration</span>
           <div class="wtitle">ArcGIS Enterprise Management</div>
@@ -1248,16 +1289,7 @@ footer{
           <a class="plink" href="https://wisdomkipkemboi.maps.arcgis.com/home/index.html" target="_blank" rel="noreferrer">Open project →</a>
         </div>
       </div>
-      <div class="wcard reveal" data-project-type="configuration">
-        <!--<div class="wmedia map-elearn"></div>-->
-        <div class="wmedia"> <img src="crowd-mapping-preview.jpg" alt="E-learning interface" /> </div>
-        <div class="wcard-body">
-          <span class="wcat">Education Technology</span>
-          <div class="wtitle">E-learning System Configuration</div>
-          <p class="wdesc">Configuration and support for digital learning infrastructure linked to environmental education and geospatial learning delivery.</p>
-          <a class="plink" href="https://iggresapps.dkut.ac.ke/moodle/" target="_blank" rel="noreferrer">Open project →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
