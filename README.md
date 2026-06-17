@@ -1,59 +1,50 @@
 # Wisdom Kipkemboi
+**GIS & Earth Observation Consultant · GeoAI · Remote Sensing · Web-GIS Development**
 
-**GIS & Earth Observation Consultant | GeoAI | Remote Sensing | Web-GIS Development**
+GIS & Earth Observation professional with 10+ years of experience spanning research, enterprise GIS, Earth Observation applications, geospatial software development, and technical leadership.
 
-GIS & Earth Observation professional with **10+ years of experience** delivering geospatial solutions for environmental monitoring, restoration assessment, natural resource management, and sustainable development.
+Designing geospatial systems that transform Earth Observation data into actionable intelligence — for environmental monitoring, natural resource management, landscape restoration, and climate-aligned decision-making.
 
-**Designing geospatial systems that turn Earth Observation data into actionable intelligence for environmental management, restoration, and sustainable development.**
-
-🌐 **Portfolio:** https://wisdomkipkemboi.github.io
+🌐 **Portfolio:** [wisdomkipkemboi.github.io](https://wkipkemboi.github.io)
 
 ---
 
 ## Areas of Expertise
 
-* Geographic Information Systems (GIS)
-* Remote Sensing & Earth Observation
-* Google Earth Engine Application Development
-* GeoAI & Spatial Machine Learning
-* Spatial Data Science & Analytics
-* Environmental Monitoring Systems
-* Land Cover & Land Use Mapping
-* Restoration Assessment & Monitoring
-* Natural Resource Management
-* Climate & Carbon Analytics
-* Web-GIS & Spatial Decision Support Systems
-* Enterprise GIS Architecture & Administration
-* Geospatial Capacity Development & Training
+| Domain | Domain |
+|--------|--------|
+| Enterprise GIS Architecture & Administration | Cloud-Native Earth Observation Applications |
+| GeoAI & Spatial Machine Learning | Spatial Data Science & Advanced Analytics |
+| Environmental Intelligence & Monitoring Systems | Enterprise Web-GIS & Decision Support Platforms |
+| Restoration Assessment & Landscape Monitoring | Climate, Carbon & Nature-Based Solutions Analytics |
+| Land Cover Mapping & Change Detection | Natural Resource Management & Planning |
+| Geospatial Research & Innovation | Capacity Building & Technical Leadership |
 
 ---
 
 ## Technology Stack
 
-### GIS & Earth Observation
+**Enterprise GIS & Spatial Platforms**  
+`ArcGIS Enterprise` `ArcGIS Server` `Portal for ArcGIS` `ArcGIS Online` `ArcGIS Pro` `QGIS`
 
-ArcGIS Pro • ArcGIS Enterprise • ArcGIS Server • Portal for ArcGIS • ArcGIS Online • QGIS • Google Earth Engine • ERDAS Imagine • ENVI • Global Mapper
+**Earth Observation & Geospatial Analytics**  
+`Google Earth Engine` `ERDAS Imagine` `ENVI` `Global Mapper`
 
-### Programming & Development
+**Geospatial Software Development**  
+`Python` `JavaScript` `Django` `GeoDjango` `Flask` `REST APIs` `HTML5` `CSS3`
 
-Python • JavaScript • HTML5 • CSS3 • Django • GeoDjango • Flask • REST APIs
+**Spatial Databases & Data Infrastructure**  
+`PostgreSQL/PostGIS` `MySQL` `Spatial SQL` `Database Design & Optimisation`
 
-### Spatial Databases
+**Geospatial Web Technologies**  
+`GeoServer` `OpenLayers` `Leaflet` `Web-GIS Application Development`
 
-PostgreSQL/PostGIS • MySQL • Spatial SQL • Database Design & Optimization
+**GeoAI & Data Science**  
+`GeoPandas` `Pandas` `NumPy` `Scikit-learn` `Spatial Statistics` `Data Visualisation`
 
-### Geospatial Web Technologies
-
-GeoServer • OpenLayers • Leaflet • MapServer • Web-GIS Application Development
-
-### Data Science & GeoAI
-
-NumPy • Pandas • GeoPandas • Scikit-learn • Machine Learning • Spatial Statistics • Data Visualization
-
-### Cloud & Infrastructure
-
-Google Cloud Platform • Earth Engine Cloud Infrastructure • Linux Server Administration • Enterprise GIS Deployment
+**Cloud & Systems**  
+`Google Cloud Platform` `Linux Server Administration` `Enterprise GIS Deployment`
 
 ---
 
-🌍 **Turning geospatial data into actionable intelligence.**
+🌍 *Turning geospatial data into actionable intelligence.*
